@@ -3,7 +3,9 @@ include:
   - sift.config.user
   - sift.config.timezone
   - sift.config.folders
+{% if pillar.sift_manage_salt is defined and pillar.sift_manage_salt == False %}
   - sift.config.salt-minion
+{% endif %}
   - sift.config.samba
   - sift.config.tools
   #- .symlinks
@@ -16,7 +18,9 @@ sift-config:
       - sls: sift.config.user
       - sls: sift.config.timezone
       - sls: sift.config.folders
+{% if pillar.sift_manage_salt is defined and pillar.sift_manage_salt == False %}
       - sls: sift.config.salt-minion
+{% endif %}
       - sls: sift.config.samba
       - sls: sift.config.tools
       

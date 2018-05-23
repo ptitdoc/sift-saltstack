@@ -1,0 +1,17 @@
+# Set the SIFT Workstation Timezone. Defaults to Etc/UTC.
+sift_timezone: Etc/UTC
+
+# Force reinstalling python pip packages (eg: when installing timesketch dependencies). Defaults to False.
+python_force_reinstall: False
+
+# Analyst user account that will be created and/or customized. Defaults to sansforensics.
+sift_user: sansforensics
+
+# Hostname
+sift_hostname: siftworkstation
+
+# SIFT Version tag
+sift_version: stable
+
+# Whether or not let sift-saltstack manage salt configuration. Can be set to False if salt is used on the system for other purposes. Defaults to True.
+sift_manage_salt: True
